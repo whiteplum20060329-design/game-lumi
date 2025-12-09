@@ -2,7 +2,7 @@ class Cat {
   PVector catPos;   // the origin position of cat
   PVector catVel;   // the speed of cat
   boolean left;
-  boolean right;
+  boolean right; 
   boolean up;
   float r = 30;     // The cat's body range used for distance or hit detection
   PImage catImg;
@@ -56,6 +56,7 @@ class Cat {
     if (catPos.x < r) {
       catPos.x = r;
     }
+    
     if (catPos.x > width - r) {
       catPos.x = width - r;
     }
